@@ -1,0 +1,7 @@
+lane :test do
+  ENV["FL_DINGTALK_ACCESS_TOKEN"] = "xxx"
+  ENV["FL_DINGTALK_SECRET"] = "SECxxx"
+  dingtalk_msg(
+    message: "hello"
+  )
+end
